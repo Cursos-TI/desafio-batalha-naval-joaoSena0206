@@ -34,8 +34,8 @@ int main()
     int tabuleiro[LINHAS_TABULEIRO][COLUNAS_TABULEIRO];
     int navioHorizontal[3];
     int navioVertical[3];
-    int coord_navioHorizontal[2] = {5, 1};
-    int coord_navioVertical[2] = {5, 2};
+    int coord_navioHorizontal[2] = {5 - 1, 1 - 1}; // Diminui as coordenadas em 1 para que o usuário entenda como 10x10 e não como 9x9 (array começa no índice 0)
+    int coord_navioVertical[2] = {7 - 1, 1 - 1};
 
     // Inicializa o tabuleiro com 0s
     for (int i = 0; i < LINHAS_TABULEIRO; i++)
